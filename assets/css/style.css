@@ -79,31 +79,46 @@ a {
         margin-left: 0;
       }
 
-      #Accounts {
+      #Accounts, #Prodotti, #Azienda, #Aiuto, #Lingue {
         position: relative;
       }
 
-      #Accounts ul {
+        .ul_drop {
+          display: none;
+          position: absolute;
+          top: 150%;
+          left: 50%;
+          transform: translate(-50%);
+          box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+        }
+
+          .ul_drop li {
+            padding: 20px 30px;
+          }
+
+      #Prodotti ul {
+        width: 340px;
+      }
+
+      #Azienda ul {
+        width: 170px;
+      }
+
+      #Aiuto ul {
+        width: 190px;
+      }
+
+
+
+      #Lingue .arrow_up {
         display: none;
-        position: absolute;
-        top: 30px;
-        left: -30px;
-        box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
       }
 
-      #Accounts ul li {
-        padding: 20px 30px;
-      }
-
-      .lingue .arrow_up {
-        display: none;
-      }
-
-      .lingue:hover .arrow_up{
+      #Lingue:hover .arrow_up{
         display: inline-block;
       }
 
-      .lingue:hover .arrow_down{
+      #Lingue:hover .arrow_down{
         display: none;
       }
 

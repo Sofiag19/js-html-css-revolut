@@ -4,13 +4,36 @@
 
 $( document ).ready(function() {
 
+  // sicuramente esiste un modo per accorpare tutte queste funzioni e renderle univoche
   $("#Accounts").click(function(){
 
     $("#Accounts ul").toggle();
 
   })
 
+  $("#Prodotti").click(function(){
+
+    $("#Prodotti ul").toggle();
 
 
+  })
+
+  $("#Azienda").click(function(){
+
+    $("#Azienda ul").toggle();
+
+  })
+
+  $("#Aiuto").click(function(){
+
+    $("#Aiuto ul").toggle();
+
+  })
+
+  $("#Lingue").click(function(){
+
+    $("#Lingue ul").toggle();
+
+  })
 
 })
