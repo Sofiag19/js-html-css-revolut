@@ -20,11 +20,17 @@ a {
   nav {
     display: flex;
     justify-content: space-between;
-    padding: 50px;
+    align-items: center;
+    padding: 40px 0;
+    margin: 0 48px;
   }
 
   nav a {
     color: rgb(139, 149, 158);
+  }
+
+  nav a:hover {
+    color: rgb(25, 28, 31);
   }
 
   .nav_left {
@@ -37,8 +43,9 @@ a {
       margin-right: 28px;
     }
 
-      .nav_left .logo {
+      .logo {
         width: 100px;
+        margin-right: 28px;
       }
 
       .nav_left div:nth-of-type(2) a {
@@ -62,11 +69,45 @@ a {
         margin-left: 33px;
       }
 
-    .nav_right > a {
+      .nav_right ul li:first-of-type {
+        margin-left: 0;
+      }
+
+      .lingue .arrow_up {
+        display: none;
+      }
+
+      .lingue:hover .arrow_up{
+        display: inline-block;
+      }
+
+      .lingue:hover .arrow_down{
+        display: none;
+      }
+
+    .but_app {
       background-color: rgb(235, 0, 141);
       padding: 13px 20px;
       border-radius: 100px;
       color: white;
       font-weight: 500;
       margin-left: 20px;
+    }
+
+    .but_app:hover {
+      background-color: rgb(210, 0, 126);
+      color: white;
+    }
+
+    @media all and (max-width: 1100px) and (min-width:1081px) {
+      .nav_left {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        line-height: 25px;
+      }
+    }
+
+    @media all and(max-width:1080px) {
+
     }
