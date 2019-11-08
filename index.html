@@ -13,15 +13,17 @@
       <header>
         <!-- navbar -->
         <nav>
-          <div>
-            <a href="#"><img src="assets/img/1280px-Revolut.svg.png" alt="logo revolut" class="logo"></a>
-          </div>
           <div class="nav_left">
             <div>
-              <a href="#">PERSONALE</a>
+              <a href="#"><img src="assets/img/1280px-Revolut.svg.png" alt="logo revolut" class="logo"></a>
             </div>
-            <div>
-              <a href="#">BUSINESS</a>
+            <div class="nav_nav_left">
+              <div>
+                <a href="#">PERSONALE</a>
+              </div>
+              <div>
+                <a href="#">BUSINESS</a>
+              </div>
             </div>
           </div>
           <div class="nav_right">
@@ -29,8 +31,13 @@
               <li>
                 <a href="#">Tariffazione</a>
               </li>
-              <li>
+              <li id="Accounts">
                 <a href="#">Accounts</a>
+                <ul class="list_type">
+                  <li> <a href="#">Standard</a> </li>
+                  <li> <a href="#">Medium</a> </li>
+                  <li> <a href="#">Metal</a> </li>
+                </ul>
               </li>
               <li>
                 <a href="#">Prodotti</a>
@@ -46,6 +53,15 @@
               </li>
             </ul>
             <a href="#" class="but_app">Scarica l'app</a>
+          </div>
+          <div class="nav_hidden">
+            <a href="#">
+              <img src="assets/img/1280px-Revolut.svg.png" alt="logo revolut" class="logo">
+            </a>
+            <div class="dropdown">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
           </div>
         </nav>
       </header>

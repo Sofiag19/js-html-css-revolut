@@ -21,7 +21,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0;
+    padding: 20px 0;
     margin: 0 48px;
   }
 
@@ -45,12 +45,18 @@ a {
 
       .logo {
         width: 100px;
-        margin-right: 28px;
+        margin-right: 10px;
       }
 
-      .nav_left div:nth-of-type(2) a {
-        color: rgb(25, 28, 31);
+      .nav_nav_left {
+        display: flex;
+        justify-content: space-around;
       }
+
+        .nav_nav_left div:first-of-type a {
+          color: rgb(25, 28, 31);
+          margin-right: 28px;
+        }
 
 
   .nav_right {
@@ -59,18 +65,34 @@ a {
     align-items: center;
   }
 
-    .nav_right ul {
+    .nav_right > ul {
       display: flex;
       justify-content: flex-end;
       align-items: center;
     }
 
-      .nav_right ul li {
+      .nav_right > ul > li {
         margin-left: 33px;
       }
 
       .nav_right ul li:first-of-type {
         margin-left: 0;
+      }
+
+      #Accounts {
+        position: relative;
+      }
+
+      #Accounts ul {
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: -30px;
+        box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+      }
+
+      #Accounts ul li {
+        padding: 20px 30px;
       }
 
       .lingue .arrow_up {
@@ -99,8 +121,21 @@ a {
       color: white;
     }
 
-    @media all and (max-width: 1100px) and (min-width:1081px) {
-      .nav_left {
+  .nav_hidden {
+    display: none;
+  }
+
+    .nav_hidden i {
+      color: rgb(139, 149, 158);
+      font-size: 20px;
+    }
+
+    .nav_hidden i:hover {
+      color: rgb(25, 28, 31);
+    }
+
+    @media all and (max-width: 1140px) and (min-width:1081px) {
+      .nav_nav_left {
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
@@ -108,6 +143,15 @@ a {
       }
     }
 
-    @media all and(max-width:1080px) {
+    @media all and (max-width:1080px) {
 
+      .nav_left, .nav_right {
+        display: none;
+      }
+
+      .nav_hidden {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
     }
