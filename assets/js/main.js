@@ -9,31 +9,43 @@ $( document ).ready(function() {
 
     $("#Accounts ul").toggle();
 
-  })
+  });
 
   $("#Prodotti").click(function(){
 
     $("#Prodotti ul").toggle();
 
-
-  })
+  });
 
   $("#Azienda").click(function(){
 
     $("#Azienda ul").toggle();
 
-  })
+  });
 
   $("#Aiuto").click(function(){
 
     $("#Aiuto ul").toggle();
 
-  })
+  });
 
   $("#Lingue").click(function(){
 
     $("#Lingue ul").toggle();
 
-  })
+  });
+
+  $(".dropdown i").click(function(){
+
+    $("#ham_menu").show();
+    $(".nav_hidden").hide();
+  });
+
+  $("#ham_menu > div > a > i").click(function(){
+
+    $("#ham_menu").hide();
+    $(".nav_hidden").show();
+
+  });
 
 })

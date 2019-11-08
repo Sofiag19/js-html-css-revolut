@@ -29,7 +29,7 @@ a {
     color: rgb(139, 149, 158);
   }
 
-  nav a:hover {
+  nav a:hover  {
     color: rgb(25, 28, 31);
   }
 
@@ -108,8 +108,6 @@ a {
         width: 190px;
       }
 
-
-
       #Lingue .arrow_up {
         display: none;
       }
@@ -147,6 +145,71 @@ a {
 
     .nav_hidden i:hover {
       color: rgb(25, 28, 31);
+    }
+
+  #ham_menu {
+    display: none;
+    border: 1px solid black; /* DEBUG:  */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 30px;
+    line-height: 50px;
+  }
+
+    #ham_menu > div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #ham_menu > div > div:first-of-type a {
+      color: rgb(25, 28, 31);
+    }
+
+    #ham_menu hr {
+      width: 100%;
+      margin: 20px 0;
+      color: rgb(139, 149, 158);
+    }
+
+    #ham_menu > div > a:first-of-type {
+      position: absolute;
+      top: 30px;
+      right: 25px;
+      transform: translate(-50%,-50%);
+      font-size: 30px;
+    }
+
+    #ham_menu > div > ul > li > .arrow_up {
+      display: none;
+    }
+
+    #ham_menu > div > ul > li > i {
+      color: rgb(139, 149, 158);
+    }
+
+    #ham_menu > div > ul > li:hover i, #ham_menu > div > ul > li:hover a{
+      color: rgb(25, 28, 31);
+    }
+
+    .li_fl {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #ham_menu .but_app {
+      text-align: center;
+    }
+
+    @media all  and (min-width:1141px) {
+      #ham_menu {
+        display: none;
+      }
+
+      .nav_hidden {
+        display: none;
+      }
     }
 
     @media all and (max-width: 1140px) and (min-width:1081px) {
