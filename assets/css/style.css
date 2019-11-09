@@ -149,7 +149,6 @@ a {
 
   #ham_menu {
     display: none;
-    border: 1px solid black; /* DEBUG:  */
     position: absolute;
     top: 0;
     left: 0;
@@ -174,7 +173,7 @@ a {
     }
 
     #ham_menu > div > a:first-of-type {
-      position: absolute;
+      position: fixed;
       top: 30px;
       right: 25px;
       transform: translate(-50%,-50%);
@@ -182,6 +181,14 @@ a {
     }
 
     #ham_menu > div > ul > li > .arrow_up {
+      display: none;
+    }
+
+    #ham_menu > div > ul > li:hover > .arrow_up {
+      display: inline-block;
+    }
+
+    #ham_menu > div > ul > li:hover > .arrow_down {
       display: none;
     }
 
@@ -196,10 +203,14 @@ a {
     .li_fl {
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
 
     #ham_menu .but_app {
       text-align: center;
+      margin: 0;
+      align-self: center;
+      padding: 0 20px;
     }
 
     @media all  and (min-width:1141px) {
