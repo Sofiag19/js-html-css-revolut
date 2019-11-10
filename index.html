@@ -10,30 +10,158 @@
   <body>
 
     <!-- header -->
-      <header>
-        <!-- navbar -->
-        <nav>
-          <div class="nav_left">
+    <header>
+      <!-- navbar -->
+      <nav>
+        <div class="nav_left">
+          <div>
+            <a href="#"><img src="assets/img/1280px-Revolut.svg.png" alt="logo revolut" class="logo"></a>
+          </div>
+          <div class="nav_nav_left">
             <div>
-              <a href="#"><img src="assets/img/1280px-Revolut.svg.png" alt="logo revolut" class="logo"></a>
+              <a href="#">PERSONALE</a>
             </div>
-            <div class="nav_nav_left">
-              <div>
-                <a href="#">PERSONALE</a>
-              </div>
-              <div>
-                <a href="#">BUSINESS</a>
-              </div>
+            <div>
+              <a href="#">BUSINESS</a>
             </div>
           </div>
-          <div class="nav_right">
+        </div>
+        <div class="nav_right">
+          <ul class="list_type">
+            <li id="Tariffazione">
+              <a href="#">Tariffazione</a>
+            </li>
+            <li id="Accounts">
+              <a href="#">Accounts</a>
+              <ul class="list_type ul_drop">
+                <li>
+                  <a href="#">Standard</a>
+                </li>
+                <li>
+                  <a href="#">Medium</a>
+                </li>
+                <li>
+                  <a href="#">Metal</a>
+                </li>
+              </ul>
+            </li>
+            <li id="Prodotti">
+              <a href="#">Prodotti</a>
+              <ul class="list_type ul_drop">
+                <li>
+                  <a href="#">Trasferimenti di denaro</a>
+                </li>
+                <li>
+                  <a href="#">Vault</a>
+                </li>
+                <li>
+                  <a href="#">Gestione Budget</a>
+                </li>
+                <li>
+                  <a href="#">Perk</a>
+                </li>
+                <li>
+                  <a href="#">Criptovaluta</a>
+                </li>
+                <li>
+                  <a href="#">Assicurazione Smartphone</a>
+                </li>
+                <li>
+                  <a href="#">Assicurazione medica internazionale</a>
+                </li>
+                <li>
+                  <a href="#">API di open bank</a>
+                </li>
+                <li>
+                  <a href="#">Apple Pay</a>
+                </li>
+                <li>
+                  <a href="#">Donazioni</a>
+                </li>
+              </ul>
+            </li>
+            <li id="Azienda">
+              <a href="#">Azienda</a>
+              <ul class="list_type ul_drop">
+                <li>
+                  <a href="#">Chi siamo</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">Lavora con noi</a>
+                </li>
+                <li>
+                  <a href="#">Affiliates</a>
+                </li>
+                <li>
+                  <a href="#">Influencers</a>
+                </li>
+                <li>
+                  <a href="#">Contatto</a>
+                </li>
+              </ul>
+            </li>
+            <li id="Aiuto">
+              <a href="#">Aiuto</a>
+              <ul class="list_type ul_drop">
+                <li>
+                  <a href="#">Community</a>
+                </li>
+                <li>
+                  <a href="#">Centro assistenza</a>
+                </li>
+                <li>
+                  <a href="#">Security</a>
+                </li>
+                <li>
+                  <a href="#">Stato di sistema</a>
+                </li>
+              </ul>
+            </li>
+            <li id="Lingue">
+              <a href="#">IT <i class="fas fa-angle-down arrow_down"></i><i class="fas fa-angle-up arrow_up"></i></a>
+              <ul class="list_type ul_drop">
+                <li>
+                  <a href="#">Italiano</a>
+                </li>
+                <li>
+                  <a href="#">Inglese</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a href="#" class="but_app">Scarica l'app</a>
+        </div>
+        <div class="nav_hidden">
+          <a href="#">
+            <img src="assets/img/1280px-Revolut.svg.png" alt="logo revolut" class="logo">
+          </a>
+          <div class="dropdown">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <div id="ham_menu">
+          <div>
+            <div>
+              <a href="#">PERSONALE</a>
+            </div>
+            <div>
+              <a href="#">BUSINESS</a>
+            </div>
+            <hr>
             <ul class="list_type">
-              <li id="Tariffazione">
+              <li id="Tariffazione_ham">
                 <a href="#">Tariffazione</a>
               </li>
-              <li id="Accounts">
+              <li id="Accounts_ham" class="li_fl">
                 <a href="#">Accounts</a>
-                <ul class="list_type ul_drop">
+                <i class="fas fa-angle-down arrow_down"></i>
+                <i class="fas fa-angle-up arrow_up"></i>
+              </li>
+              <li class="list_ham">
+                <ul class="list_type">
                   <li>
                     <a href="#">Standard</a>
                   </li>
@@ -45,9 +173,13 @@
                   </li>
                 </ul>
               </li>
-              <li id="Prodotti">
+              <li class="li_fl" id="Prodotti_ham">
                 <a href="#">Prodotti</a>
-                <ul class="list_type ul_drop">
+                <i class="fas fa-angle-down arrow_down"></i>
+                <i class="fas fa-angle-up arrow_up"></i>
+              </li>
+              <li class="list_ham">
+                <ul class="list_type">
                   <li>
                     <a href="#">Trasferimenti di denaro</a>
                   </li>
@@ -80,9 +212,13 @@
                   </li>
                 </ul>
               </li>
-              <li id="Azienda">
+              <li class="li_fl" id="Azienda_ham">
                 <a href="#">Azienda</a>
-                <ul class="list_type ul_drop">
+                <i class="fas fa-angle-down arrow_down"></i>
+                <i class="fas fa-angle-up arrow_up"></i>
+              </li>
+              <li class="list_ham">
+                <ul class="list_type">
                   <li>
                     <a href="#">Chi siamo</a>
                   </li>
@@ -103,9 +239,13 @@
                   </li>
                 </ul>
               </li>
-              <li id="Aiuto">
+              <li class="li_fl" id="Aiuto_ham">
                 <a href="#">Aiuto</a>
-                <ul class="list_type ul_drop">
+                <i class="fas fa-angle-down arrow_down"></i>
+                <i class="fas fa-angle-up arrow_up"></i>
+              </li>
+              <li class="list_ham">
+                <ul class="list_type">
                   <li>
                     <a href="#">Community</a>
                   </li>
@@ -120,9 +260,13 @@
                   </li>
                 </ul>
               </li>
-              <li id="Lingue">
-                <a href="#">IT <i class="fas fa-angle-down arrow_down"></i><i class="fas fa-angle-up arrow_up"></i></a>
-                <ul class="list_type ul_drop">
+              <li id="Lingue_ham">
+                <a href="#">IT</a>
+                <i class="fas fa-angle-down arrow_down"></i>
+                <i class="fas fa-angle-up arrow_up"></i>
+              </li>
+              <li class="list_ham">
+                <ul class="list_type">
                   <li>
                     <a href="#">Italiano</a>
                   </li>
@@ -132,160 +276,42 @@
                 </ul>
               </li>
             </ul>
-            <a href="#" class="but_app">Scarica l'app</a>
-          </div>
-          <div class="nav_hidden">
-            <a href="#">
-              <img src="assets/img/1280px-Revolut.svg.png" alt="logo revolut" class="logo">
+            <a href="#" class="close">
+                <i class="fas fa-times"></i>
             </a>
-            <div class="dropdown">
-              <i class="fas fa-bars"></i>
-            </div>
+            <a href="#" class="but_app">
+              Scarica l'app
+            </a>
           </div>
-          <div id="ham_menu">
-            <div>
-              <div>
-                <a href="#">PERSONALE</a>
-              </div>
-              <div>
-                <a href="#">BUSINESS</a>
-              </div>
-              <hr>
-              <ul class="list_type">
-                <li id="Tariffazione_ham">
-                  <a href="#">Tariffazione</a>
-                </li>
-                <li id="Accounts_ham" class="li_fl">
-                  <a href="#">Accounts</a>
-                  <i class="fas fa-angle-down arrow_down"></i>
-                  <i class="fas fa-angle-up arrow_up"></i>
-                </li>
-                <li class="list_ham">
-                  <ul class="list_type">
-                    <li>
-                      <a href="#">Standard</a>
-                    </li>
-                    <li>
-                      <a href="#">Medium</a>
-                    </li>
-                    <li>
-                      <a href="#">Metal</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="li_fl" id="Prodotti_ham">
-                  <a href="#">Prodotti</a>
-                  <i class="fas fa-angle-down arrow_down"></i>
-                  <i class="fas fa-angle-up arrow_up"></i>
-                </li>
-                <li class="list_ham">
-                  <ul class="list_type">
-                    <li>
-                      <a href="#">Trasferimenti di denaro</a>
-                    </li>
-                    <li>
-                      <a href="#">Vault</a>
-                    </li>
-                    <li>
-                      <a href="#">Gestione Budget</a>
-                    </li>
-                    <li>
-                      <a href="#">Perk</a>
-                    </li>
-                    <li>
-                      <a href="#">Criptovaluta</a>
-                    </li>
-                    <li>
-                      <a href="#">Assicurazione Smartphone</a>
-                    </li>
-                    <li>
-                      <a href="#">Assicurazione medica internazionale</a>
-                    </li>
-                    <li>
-                      <a href="#">API di open bank</a>
-                    </li>
-                    <li>
-                      <a href="#">Apple Pay</a>
-                    </li>
-                    <li>
-                      <a href="#">Donazioni</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="li_fl" id="Azienda_ham">
-                  <a href="#">Azienda</a>
-                  <i class="fas fa-angle-down arrow_down"></i>
-                  <i class="fas fa-angle-up arrow_up"></i>
-                </li>
-                <li class="list_ham">
-                  <ul class="list_type">
-                    <li>
-                      <a href="#">Chi siamo</a>
-                    </li>
-                    <li>
-                      <a href="#">Blog</a>
-                    </li>
-                    <li>
-                      <a href="#">Lavora con noi</a>
-                    </li>
-                    <li>
-                      <a href="#">Affiliates</a>
-                    </li>
-                    <li>
-                      <a href="#">Influencers</a>
-                    </li>
-                    <li>
-                      <a href="#">Contatto</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="li_fl" id="Aiuto_ham">
-                  <a href="#">Aiuto</a>
-                  <i class="fas fa-angle-down arrow_down"></i>
-                  <i class="fas fa-angle-up arrow_up"></i>
-                </li>
-                <li class="list_ham">
-                  <ul class="list_type">
-                    <li>
-                      <a href="#">Community</a>
-                    </li>
-                    <li>
-                      <a href="#">Centro assistenza</a>
-                    </li>
-                    <li>
-                      <a href="#">Security</a>
-                    </li>
-                    <li>
-                      <a href="#">Stato di sistema</a>
-                    </li>
-                  </ul>
-                </li>
-                <li id="Lingue_ham">
-                  <a href="#">IT</a>
-                  <i class="fas fa-angle-down arrow_down"></i>
-                  <i class="fas fa-angle-up arrow_up"></i>
-                </li>
-                <li class="list_ham">
-                  <ul class="list_type">
-                    <li>
-                      <a href="#">Italiano</a>
-                    </li>
-                    <li>
-                      <a href="#">Inglese</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <a href="#" class="close">
-                  <i class="fas fa-times"></i>
-              </a>
-              <a href="#" class="but_app">
-                Scarica l'app
-              </a>
-            </div>
+        </div>
+      </nav>
+      <!--/ navbar -->
+    </header>
+    <!--/ header -->
+
+    <!-- main -->
+    <main>
+      <!-- section -->
+      <section id="intro">
+        <div>
+          <div>
+            <h2>Un conto radicalmente migliore</h2>
+            <p>Quando fai spese o trasferisci denaro all'estero, le altre banche ti addebitano un costo. Noi non lo facciamo. Ed è proprio per questo che 8M+ di persone hanno scelto Revolut</p>
+            <form class="" action="index.html" method="post">
+            </form>
           </div>
-        </nav>
-      </header>
+        </div>
+        <div>
+          <img src="https://assets.revolut.com/media/index/screen1.png" alt="">
+          <img src="https://assets.revolut.com/media/index/card.png" alt="">
+        </div>
+      </section>
+      <!-- section -->
+    </main>
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript"src="assets/js/main.js"></script>
   </body>

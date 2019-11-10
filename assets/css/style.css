@@ -217,6 +217,38 @@ a {
       display: none;
     }
 
+
+
+    /* main */
+    main {
+      width: 100%;
+    }
+    /* section1 */
+    #intro {
+      display: flex;
+      margin: 0 48px;
+      padding: 20px 0;
+    }
+    #intro > div:first-of-type {
+      flex-basis: 50%;
+    }
+
+    #intro > div:first-of-type > div {
+      width: 73%;
+    }
+
+    #intro > div:first-of-type > div h2 {
+      font-size: 63px;
+      font-weight: lighter;
+      line-height: 80px;
+    }
+
+    #intro > div:first-of-type > div p {
+      color: rgb(139, 149, 158);
+      line-height: 25px;
+      margin: 20px 0;
+    }
+
     @media all  and (min-width:1141px) {
       #ham_menu {
         display: none;
