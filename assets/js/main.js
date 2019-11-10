@@ -5,46 +5,29 @@
 $( document ).ready(function() {
 
   // sicuramente esiste un modo per accorpare tutte queste funzioni e renderle univoche
-  $("#Accounts").click(function(){
+  $(".nav_right ul li").not("#Tariffazione").click(function(){
 
-    $("#Accounts ul").toggle();
+    $(this).children("ul").toggle();
 
-  });
-
-  $("#Prodotti").click(function(){
-
-    $("#Prodotti ul").toggle();
-
-  });
-
-  $("#Azienda").click(function(){
-
-    $("#Azienda ul").toggle();
-
-  });
-
-  $("#Aiuto").click(function(){
-
-    $("#Aiuto ul").toggle();
-
-  });
-
-  $("#Lingue").click(function(){
-
-    $("#Lingue ul").toggle();
-
-  });
+  })
 
   $(".dropdown i").click(function(){
 
-    $("#ham_menu").show();
+    $("#ham_menu").addClass("active");
     $(".nav_hidden").hide();
+
   });
 
-  $("#ham_menu > div > a > i").click(function(){
+  $(".close").click(function(){
 
-    $("#ham_menu").hide();
+    $("#ham_menu").removeClass("active");
     $(".nav_hidden").show();
+
+  });
+
+  $("#ham_menu > div > ul > li:not(#Tariffazione_ham)").click(function(){
+
+    $(this).next().toggle();
 
   });
 

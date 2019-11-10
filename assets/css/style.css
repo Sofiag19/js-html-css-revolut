@@ -196,7 +196,7 @@ a {
       color: rgb(139, 149, 158);
     }
 
-    #ham_menu > div > ul > li:hover i, #ham_menu > div > ul > li:hover a{
+    #ham_menu > div > ul > li:hover i, #ham_menu > div > ul > li:hover > a{
       color: rgb(25, 28, 31);
     }
 
@@ -211,6 +211,10 @@ a {
       margin: 0;
       align-self: center;
       padding: 0 20px;
+    }
+
+    .list_ham {
+      display: none;
     }
 
     @media all  and (min-width:1141px) {
@@ -242,5 +246,9 @@ a {
         width: 100%;
         display: flex;
         justify-content: space-between;
+      }
+
+      #ham_menu.active {
+        display: block;
       }
     }
