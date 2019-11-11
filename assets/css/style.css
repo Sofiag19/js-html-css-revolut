@@ -147,7 +147,7 @@ sup {
 
     .nav_hidden i {
       color: rgb(139, 149, 158);
-      font-size: 20px;
+      font-size: 23px;
     }
 
     .nav_hidden i:hover {
@@ -184,7 +184,7 @@ sup {
     #ham_menu > div > a:first-of-type {
       position: fixed;
       top: 30px;
-      right: 25px;
+      right: 33px;
       transform: translate(-50%,-50%);
       font-size: 30px;
     }
