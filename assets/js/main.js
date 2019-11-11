@@ -8,6 +8,7 @@ $( document ).ready(function() {
   $(".nav_right ul li").not("#Tariffazione").click(function(){
 
     $(this).children("ul").toggle();
+    $(this).siblings().children("ul").hide();
 
   })
 
